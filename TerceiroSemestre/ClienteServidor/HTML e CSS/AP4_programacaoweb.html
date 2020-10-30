@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title> Sorteado Foi</title>
+	
+	<script language="javascript">
+			var x=20;
+			alert("Numero de concorrentes = " + x ".");
+			x = X-1;
+				function iniciarSorteio(){
+			 var x = parseInt(document.getElementById('numero').value);
+			 var y = (x-1);
+			 var sorteado = Math.floor((Math.random() * y));
+			 if (sorteado > 0 && x != sorteado){
+			 	alert("O número sorteado entre 0 e "+x+" é: " + sorteado);
+			}else{
+				  iniciarSorteio();
+				  }
+				  }
+	</script>
+    
+    </head>
+	<body>
+	
+		  <p>Digite um número para iniciar o sorteio <input type="text" pattern="[0-9]+$" id="numero"></p>
+		  <p><input type="button" value="Enviar" onclick="IniciarSorteio();"></p>
+
+  </body>
+</html>

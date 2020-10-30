@@ -1,0 +1,62 @@
+</font><!DOCTYPE html>
+<!-- Marcelo de Alencar - RGM 15391353
+EAD - Tec. Análise e Des. Sistemas - 2 Semestre de 2015
+Professora: Nathália B. Paulo
+Programção WEB - HTML5
+APll - Formulário Somente em HTML -->
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulário com HTML5</title>
+</head>
+<body>
+	<form action="#" method="post">
+		<label for="usuario">Usuário</label>
+		<input type="text" id="usuario" name="usuario" required="true" placeholder="Digite seu usuário" />
+		
+		<label for="senha">Senha</label>
+		<input type="password" id="senha" pattern="[A-Za-z-0-9]{1,20}" name="senha" required="true" placeholder="Digite uma senha com letras e números" />
+		<br /><br />
+
+		<label for="telefone">Número de telefone:</label>
+		<input pattern="[^\d{3}-\d{4}-\d{4}$" type="tel" required="true" placeholder="(000) 0000-0000" />
+
+		<label for="email">E-mail</label>
+		<input type="email" id="email" name="email" required="true" placeholder="exemplo@dominio.com" />
+		<br /><br />
+
+		<label for="website">Website</label>
+		<input type="text" id="website" name="website" placeholder="http://" />
+		<br /><br />
+
+		<label for="datanascimento">Data nascimento</label>
+		<input type="date" id="datanascimento" name="datanascimento" placeholder="00/00/0000" />
+
+		<label for="horanascimento">Hora de nascimento</label>
+		<input type="time" id="horanascimento" name="horanascimento" placeholder="00:00:00" />
+		<br /><br />
+
+		<label for="cordosolhos">Cor dos olhos</label>
+		<input type="color" id="cordosolhos" name="cordosolhos" value="#000000" />
+		<br /><br />
+
+		<label for="foto">Foto</label>
+		<input type="file" id="foto" name="foto" />
+		<br /><br />
+		<fieldset>
+			<legend>Estado Civil</legend>
+			<input type="radio" id="casado" name="estadocivil" value="casado">
+			<label for="casado">Casado</label>
+			<br />
+			<input type="radio" id="solteiro" name="estadocivil" value="solteiro">
+			<label for="solteiro">Solteiro</label>
+		</fieldset>
+		
+		<br />
+		<button input type="submit" name="validar" value="validar">Validar</button>
+		<button input type="submit" name="enviar" value="enviar">Enviar</button>
+		<button type="reset"name="reset" value="reset">Limpar</button>
+		
+	</form>
+</body>
+</html>
